@@ -1,0 +1,90 @@
+[
+    {
+        "img": "/productImg/brakefluid.png",
+        "descripcion": "LIQUIDO FRENO",
+        "carro" : "universal",
+        "id": "bfbvcs",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "WAGNER",
+            "largo" : "8 ON"
+        }
+    },
+    {
+        "img": "/productImg/brakefluid.png",
+        "descripcion": "LIQUIDO FRENO",
+        "id": "GDc46",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "WAGNER",
+            "largo" : "16 ON"
+        }
+    },
+    {
+        "img": "/productImg/coolant.png",
+        "descripcion": "COOLANT",
+        "id": "V9dktu8SD",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "PEAK",
+            "largo" : "1 GAL"
+        }
+    },
+    {
+        "img": "/productImg/silicone.png",
+        "descripcion": "SILICON GRIS",
+        "id": "V3asx1RS",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "PERMATEX",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/jackstand.png",
+        "descripcion": "GATA BOTELLA",
+        "id": "ETiuo2078",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : "2 TON"
+        }
+    },
+    {
+        "img": "/productImg/coolant.png",
+        "descripcion": "COOLANT",
+        "id": "Dcxmn489",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "SHELDRAK",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/siliconered.png",
+        "descripcion": "SILCON ROJO",
+        "id": "65z25SV",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "PERMATEX",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/wd40.png",
+        "descripcion": "WD40",
+        "id": "6A12SV",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "WD40",
+            "largo" : ""
+        }
+    }
+]
+

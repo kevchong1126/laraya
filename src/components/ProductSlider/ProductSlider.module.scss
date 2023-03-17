@@ -1,0 +1,66 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container($mg-l);
+    margin-block: $mg-xl;
+
+    .content{
+        width: 85%;
+        max-width: 1300px;
+        margin-inline: auto;
+        padding-bottom: 2rem;
+    }
+    
+}
+
+.titleSection{
+    margin-bottom: $mg-nm;
+    font-style: italic;
+
+    .highlight{
+        font-weight: 900;
+        color: $black;
+    }
+
+    .title{
+        position: relative;
+        display: inline-block;
+        padding: $pd-s;
+        font-size: $txt-xl;
+        font-weight: 700;
+        letter-spacing: 1px;
+        color: $black-light;
+
+        @include tablet{
+            font-size: min($txt-nm-resp, 4rem);
+        }
+    }
+
+    .title::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 1rem;
+        width: 8rem;
+        height: 3px;
+        background-color: $yellow;
+        border-radius: 1rem;
+    }
+}
+
+.slider{
+    width: 100%;
+
+    .product{
+        padding: 1rem;
+        border: 2px solid yellow;
+
+        .fill{
+            width: 300px;
+        }
+    }
+}
+

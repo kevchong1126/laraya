@@ -1,0 +1,68 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 230px;
+    /*overflow: hidden;*/
+    padding-inline: $pd-s;
+    padding-block: $pd-xs;
+    border-radius: 0.4rem;
+    box-shadow: 0px 2px 5px 0.2px rgba($color: $black, $alpha: 0.2);
+    color: $black;
+
+    .content{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
+
+.imgContainer{
+    width: 100%;
+    height: 50%;
+
+    .img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.textContainer{
+    margin-bottom: $mg-nm;
+
+    .brand{
+        color: $gray-dark-3;
+        font-size: $txt-s;
+        font-weight: 900;
+        margin-bottom: $mg-xs;letter-spacing: 1px;
+    }
+    
+    .title{
+        font-size: $txt-l;
+        font-weight: 700;
+        
+        
+    }
+
+    .size{
+        color: $gray-dark-3;
+        font-size: 0.7rem;
+    }
+}
+
+.priceContainer{
+    position: absolute;
+    bottom: 0;
+    width: 90%;
+    bottom: 1rem;
+    text-align: center;
+    font-weight: 900;
+}

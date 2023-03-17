@@ -1,0 +1,86 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container(10rem);
+    background-color: $yellow;
+    color: $black;
+    border-top: 2px solid $black;
+    padding-top: 5rem;
+    
+    .content{
+        width: 90%;
+        max-width: 1200px;
+        margin-inline: auto;
+
+        .row{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+
+            @include tablet{
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+    }
+
+}
+
+.col{
+    width: 100%;
+
+    @include tablet{
+        max-width: 300px;
+    }
+    .header{
+        margin-bottom: $mg-xs;
+        font-weight: 900;
+        font-size: $txt-l;
+    }
+
+    .list{
+        display: inline-block;
+
+        .listItem{
+            display: block;
+            color: $gray-dark-3;
+            font-weight: 700;
+            
+            margin-block: $mg-xs;
+
+            .link{
+                display: inline-block;
+                color: $gray-dark-3;
+                font-weight: 700;
+                padding-right: $pd-xs;
+                border-bottom: 2px solid transparent;
+
+                &:hover{
+                    border-bottom: 2px solid $gray-dark-3;
+                }
+            }
+        }
+    }
+
+    .about{
+        margin-top: $mg-s;
+        color: $gray-dark-3;
+        font-weight: 700;
+        line-height: $txt-l;
+        letter-spacing: 1px;
+    }
+}
+
+.copyrightContainer{
+    padding-top: $pd-xl;
+    padding-bottom: $pd-xs;
+    color: $gray-dark-3;
+
+    .copyrightContent{
+        font-size: $txt-s;
+        text-align: center;
+    }
+}

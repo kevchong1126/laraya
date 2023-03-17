@@ -1,0 +1,53 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.hamburgerContainer{
+    width: 3rem;
+    height: 2.8rem;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: $mg-nm;
+    border-radius: 0.3rem;
+    @include transition( background-color, 0.2s);
+
+    @include breakpoint(850px){
+        display: none;
+    }
+
+
+    &:hover{
+        background-color: rgba($color: $gray-light-2, $alpha: 0.8) ;
+    }
+
+    .bar{
+        width: 1.8rem;
+        height: 3px;
+        background-color: $black;   
+        @include transition; 
+    }
+}
+
+.hamburgerContainer.close{
+
+    .bar:nth-child(1){
+        position: relative;
+        top: 0.5rem;
+        transform: rotate(45deg);
+    }
+
+    .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .bar:nth-child(3){
+        position: relative;
+        bottom: 0.5rem;
+        transform: rotate(-45deg);
+    }
+}

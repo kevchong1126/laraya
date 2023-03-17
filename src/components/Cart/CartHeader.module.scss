@@ -1,0 +1,31 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container;
+    margin-bottom: $mg-l;
+    padding-left: $pd-s;
+    
+    .header{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        
+        .title{
+            font-size: $txt-xl;
+            border-bottom: 2px solid black;
+
+            .highlight{
+                color: $gray-dark-3;
+                font-weight: 800;
+            }
+        }
+
+        .icon{
+            font-size: $txt-l;
+            color: $gray-dark-3;
+        }
+    }
+}

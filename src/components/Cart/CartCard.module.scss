@@ -1,0 +1,98 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container;
+    border: 2px solid $gray-light-2;
+    background-color: $white;
+    padding-block: $pd-nm;
+
+    .content{
+        width: 95%;
+        margin-inline: auto;
+
+        @include tablet{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+}
+
+.top{  
+
+    .title{
+        color: $black;
+        font-weight: 700;
+        margin-bottom: $mg-s;
+    }
+
+    .imgContainer{
+        width: 50%;
+        max-width: 200px;
+        height: 150px;
+        margin-bottom: $mg-s;
+
+        .img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.propertiesContainer{
+    margin-block: $mg-l;
+    font-size: $txt-s;
+    color: $gray-dark-2;
+    
+    .property{
+        margin-block: $mg-s;
+    }
+}
+
+.qtyContainer{
+    display: flex;
+    gap: 1rem;
+    font-weight: 700;
+    font-size: 1rem;
+
+    button{
+        @include resetBtn;
+        display: inline-block;
+        padding: $pd-s;
+        font-size: 1.2rem;
+        font-weight: 900;
+        cursor: pointer;
+        border: 1px solid $gray-light-1;
+        border-radius: 50%;
+        width: 48px;
+        height: 48px;
+    }
+
+    .counter{
+        padding: $pd-s $pd-xl;
+        border: 1px solid $gray-light-1;
+        border-radius: 0.3rem;
+    }
+}
+    
+
+.removeItem{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+
+    .trashIcon{
+        color: red;
+        font-size: $txt-l;
+        @include transition;
+
+        &:hover{
+            transform: scale(1.05);
+        }
+    }
+}

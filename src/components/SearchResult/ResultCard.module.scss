@@ -1,0 +1,108 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container;
+
+    .content{
+        width: 100%;
+        margin-inline: auto;
+        display: flex;
+        align-items: stretch;
+        gap: 1rem;
+        box-shadow: 0px 1px 5px rgba($color: $black, $alpha: 0.2);
+        border-radius: 0.1rem;
+    }
+}
+
+.left{
+    width: 20%;
+    max-width: 150px;
+    
+    .imgContainer{
+        width: 100%;
+        height: 100%;
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+    }
+}
+
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: $pd-s $pd-nm;
+
+    @include tablet{
+        flex-direction: row;
+        justify-content: stretch;
+    }
+
+    @include desktop-sm{
+        padding: $pd-s;
+    }
+
+    .top{
+        margin-bottom: $mg-nm;
+
+        @include tablet{
+            flex: 1;
+        }
+
+        .titleLink{
+            color: $gray-dark-3;
+
+            .title{
+                font-size: $txt-nm;
+                font-weight: 600;
+            }
+        }
+        
+    }
+
+    .bottom{
+
+        @include tablet{
+            width: 300px;
+        }
+
+        .properties{
+            color: $gray-dark-2;
+            font-size: $txt-s;
+            font-weight: 400;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .addBtn{
+            @include resetBtn;
+            cursor: pointer;
+            background-color: $blue-light-1;
+            color: $white;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-size: 1rem;
+            margin-top: $mg-nm;
+            padding: $pd-s;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            border-radius: 0.3rem;
+            width: 100%;
+        }
+
+        .goToCart{
+            @extend .addBtn;
+            background-color: $gray-dark-3;
+            color: $white;
+        }
+    }
+}

@@ -1,0 +1,160 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding-block: $pd-xl;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    &:hover{
+        .bgImg{
+            transform: scale(1.2);
+        }
+        .content{
+            transform: scale(1.05);
+        }
+    }
+
+    @include tablet{
+        border-radius: 0.12rem;
+    }
+
+    
+    .content{
+        width: 60%;
+        @include transition($duration: 0.3s);
+    }
+
+    .bg{
+        position: absolute;
+        right: 4rem;
+        bottom: -1rem;
+
+        .bgImg{
+            width: 20vw;
+            max-width: 8rem;
+            @include transition($duration: 1s);
+
+            @include tablet{
+                width: 18vw;
+                max-width: 12rem;
+            }
+        }
+    }
+}
+
+.textContent{
+    color: $white;
+    font-weight: 900;
+    text-align: center;
+
+    .text{
+        font-size: $txt-nm-resp;
+
+        @include tablet{
+            font-size: $txt-s-resp;
+        }
+
+        @include desktop-l{
+            font-size: 1.4rem;
+        }
+    }
+
+    .highlight{
+        font-size: $txt-l-resp;
+
+        @include tablet{
+            font-size: $txt-nm-resp;
+        }
+
+        @include desktop-l{
+            font-size: 2.2rem;
+        }
+    }
+}
+
+.a{
+    background-color: $blue-dark-1;
+    grid-area: a;
+
+    .bg{
+        transform: scale(1.5);
+        bottom: -1rem;
+    }
+}
+
+.b{
+    background-color: $gray-dark-2;
+    grid-area: b;
+    display: flex;
+    justify-content: flex-end;
+
+    @include tablet{
+        justify-content: center;
+    }
+    
+    .content{
+        
+        @include tablet{
+            align-self: flex-start;
+            justify-content: center;
+        }
+    }
+
+    .bg{
+        left: 3rem;
+
+        @include tablet{
+            bottom: 7rem;
+            left: 44%;
+            transform: translateX(-50%);
+        }
+
+        @include desktop-sm{
+            left: 50%;
+        }
+    }
+}
+
+.c{
+    background-color: $yellow;
+    grid-area: c;
+
+    .bg{
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.d{
+    background-color: $gray-light-2;
+    grid-area: d;
+    display: flex;
+    justify-content: flex-end;
+
+    .bg{
+        left: 5rem;
+        bottom: 0;
+        @include tablet{
+            left: 8rem;
+            bottom: -1rem;
+        }
+        .bgImg{
+            width: 20vw;
+            max-width: 15rem;
+
+            @include tablet{
+                width: 15vw;
+                max-width: 9rem;
+            }
+        }
+    }
+}
+

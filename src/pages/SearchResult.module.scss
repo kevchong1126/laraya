@@ -1,0 +1,35 @@
+@use '../styles/variables' as *;
+@use '../styles/typography' as *;
+@use '../styles/mixins' as *;
+@use '../styles/breakpoints' as *;
+
+.container{
+    width: 100%;
+    padding-top: 3rem;
+
+    .content{
+        width: 100%;
+        max-width: 1300px;
+        margin-inline: auto;
+    }
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin-inline: auto;
+    gap: 0.5rem;
+
+    @include desktop-sm{
+        flex-direction: row;
+    }
+
+    .left{
+        
+    }
+
+    .right{
+        flex: 1;
+    }
+}

@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container($margin-top: 3rem);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.paginate{
+    display: flex;
+    justify-content: center;
+    gap: $pd-s;
+    width: 100%;
+    font-size: $txt-nm;
+    color: $gray-dark-2;
+    
+
+    @include tablet{
+        font-size: $txt-l;
+        gap: $pd-nm;
+    }
+
+    a{
+        cursor: pointer;
+        border-bottom: 3px solid transparent;
+    }
+
+    .currBtn {
+        a{
+           border-color: $yellow; 
+        }
+    }
+
+}
+.noProducts{
+    margin-top: $mg-l;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    
+    h1{
+        font-size: $txt-xxl;
+    }
+}

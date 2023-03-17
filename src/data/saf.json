@@ -1,0 +1,89 @@
+[
+    {
+        "img": "/productImg/vest.png",
+        "descripcion": "TRIANGULO SEGURIDAD",
+        "carro" : "universal",
+        "id": "bfbfs",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/vest.png",
+        "descripcion": "CHALECO REFLECTIVO",
+        "id": "GD6546",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/screwdriver.png",
+        "descripcion": "DESATORNILLADOR PLANO",
+        "id": "V91Ab8SD",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "PHILLIP",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/jackstand.png",
+        "descripcion": "GATA BOTELLA",
+        "id": "V321zx1RS",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "STANLEY",
+            "largo" : "8 TON"
+        }
+    },
+    {
+        "img": "/productImg/jackstand.png",
+        "descripcion": "GATA BOTELLA",
+        "id": "ETA42078",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : "2 TON"
+        }
+    },
+    {
+        "img": "/productImg/vest.png",
+        "descripcion": "CINTA REFLECTIVA",
+        "id": "DFSmn489",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "3M",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/jackstand.png",
+        "descripcion": "GATA CARRETILLA",
+        "id": "65zxc4SV",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "STANLEY",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/fire.png",
+        "descripcion": "EXTINGUIDOR",
+        "id": "6ADFf4SV",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : ""
+        }
+    }
+]

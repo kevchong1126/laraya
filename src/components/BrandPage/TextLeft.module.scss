@@ -1,0 +1,62 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    padding-block: $pd-nm;
+    font-size: 1.1rem;
+    
+    .content{
+        width: 90%;
+        max-width: 1300px;
+        margin-inline: auto;
+
+        @include tablet{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+}
+
+.textContainer{
+
+    @include tablet{
+        width: 50%;
+    }
+
+    .title{
+        text-align: left;
+        font-size: $txt-xl;
+        font-weight: 900;
+        margin-bottom: $mg-s;
+    }
+
+    .text{
+        margin-bottom: $mg-nm;
+        line-height: 1.5rem;
+        letter-spacing: 1px;
+    }
+}
+
+.imgContainer{
+    height: 300px;
+    max-height: 300px;
+    width: 100%;
+
+    @include tablet{
+        max-width: 300px;
+    }
+
+    @include desktop-sm{
+        max-width: 400px;
+    }
+
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}

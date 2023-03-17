@@ -1,0 +1,44 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container(3rem);
+    padding: $pd-s;
+    box-shadow: 0px 0px 5px rgba($color: $black, $alpha: 0.2);
+    width: 100%;
+
+    @include desktop-sm{
+        width: 350px;
+    }
+
+    .categoryTitle{
+        margin-bottom: $mg-xs;
+        font-size: 1rem;
+    }
+
+    .similarCategories{
+        display: flex;
+        flex-wrap: wrap;
+        gap: $pd-nm;
+        margin-bottom: $mg-s;
+        @include tablet{
+            flex-direction: column;
+            gap: $pd-s;
+        }
+        
+        .category{
+
+            .categoryLink{
+                border-bottom: 1px solid transparent;
+                display: inline-block;
+
+                &:hover{
+                    border-bottom: 1px solid blue;
+                } 
+            }
+        }
+    }
+
+}

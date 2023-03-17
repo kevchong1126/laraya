@@ -1,0 +1,38 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.selectContainer{
+    cursor: pointer;
+    grid-column: 4/9;
+
+    @include breakpoint(850px){
+        grid-column: 1 / 3;
+        grid-row: 1;
+    }
+
+    .selectContent{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        border-radius: 0.2rem;
+        padding-block: $pd-s;
+        width: 100%;
+        margin-inline: auto;
+        @include transition($duration: 0.1s);
+
+        &:hover{
+            background-color: rgba($color: $black, $alpha: 0.1);
+        }
+    }
+}
+
+.text{
+   font-weight: 700;
+}
+
+.selectedCar{
+    color: $green-dark-2;
+    font-weight: 700;
+}

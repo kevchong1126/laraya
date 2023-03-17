@@ -1,0 +1,33 @@
+@use '../styles/variables' as *;
+@use '../styles/typography' as *;
+@use '../styles/mixins' as *;
+@use '../styles/breakpoints' as *;
+
+.container{
+    @include container($mg-xl);
+
+    .content{
+        width: 90%;
+        max-width: 1300px;
+        margin-inline: auto;
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: $mg-xl
+}
+
+.perksContainer{
+    @include container(4rem);
+
+    .perksTitle{
+        text-align: center;
+        font-weight: 900;
+        font-size: $txt-xl;
+        margin-bottom: $mg-nm;
+    }
+}

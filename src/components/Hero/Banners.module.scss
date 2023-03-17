@@ -1,0 +1,29 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    width: 100%;
+    margin-top: $mg-l;
+
+    .content{
+        width: 100%;
+        max-width: 1300px;
+        margin-inline: auto;
+        display: grid;
+        grid-template-areas: 'a a a'
+                             'b b b'
+                             'c c c'
+                             'd d d';
+
+        @include tablet{
+            grid-auto-rows: 120px;
+            gap: 0.5rem;
+            grid-template-areas: 'b b b b b a a a a a a a'
+                                 'b b b b b c c c c c c c'
+                                 'b b b b b c c c c c c c'
+                                 'b b b b b d d d d d d d';
+        }
+    }   
+}

@@ -1,0 +1,39 @@
+@use './breakpoints' as *;
+@use './typography' as *;
+@use './variables' as *;
+
+@mixin container($margin-top: 0px){
+    position: relative;
+    width: 100%;
+    margin-top: $margin-top;
+}
+
+@mixin transition($property: all, $duration: 0.3s, $ease: ease-in-out, $transitionDelay: 0){
+    transition: $property $duration $ease;
+    transition-delay: $transitionDelay;
+}
+
+@mixin btn($pd-bl: $pd-s, $pd-in: $pd-nm, $border-rd: 0.3rem, $background-clr: #fff, $color: $black){
+    padding: $pd-bl $pd-in;
+    border-radius: $border-rd;
+    background-color: $background-clr;
+    color: $color;
+}
+@mixin centerFlex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin centerAbsolute{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin resetBtn{
+    background-color: transparent;
+    border: none;
+    outline: none;
+}

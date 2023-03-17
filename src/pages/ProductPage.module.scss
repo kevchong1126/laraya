@@ -1,0 +1,16 @@
+@use '../styles/variables' as *;
+@use '../styles/typography' as *;
+@use '../styles/mixins' as *;
+@use '../styles/breakpoints' as *;
+
+.container{
+    @include container(3rem);
+    
+    @include tablet{
+        margin-top: 10rem;
+    }
+    .content{
+        width: 90%;
+        margin-inline: auto;
+    }
+}

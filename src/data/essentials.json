@@ -1,0 +1,89 @@
+[
+    {
+        "img": "/productImg/cartool.png",
+        "descripcion": "PIE DE REY",
+        "carro" : "universal",
+        "id": "89SDA4",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "SEIKO",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/screwdriver.png",
+        "descripcion": "DESATORNILLADOR ",
+        "id": "GDB156",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "PHILLIP",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/screwdriver.png",
+        "descripcion": "DESATORNILLADOR PLANO",
+        "id": "V91A8SD",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "PHILLIP",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/cartool.png",
+        "descripcion": "KIT LLAVE ALLEN",
+        "id": "VA91W81RS",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : "12 PZ"
+        }
+    },
+    {
+        "img": "/productImg/cartool.png",
+        "descripcion": "JUEGO DE CUBOS",
+        "id": "ETA4078",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : "8 PZ"
+        }
+    },
+    {
+        "img": "/productImg/ratchet.png",
+        "descripcion": "MANERAL 3/4",
+        "id": "DFS489",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/ratchet.png",
+        "descripcion": "RATCHET 3/8",
+        "id": "654SV",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : ""
+        }
+    },
+    {
+        "img": "/productImg/ratchet.png",
+        "descripcion": "RATCHET 1/2",
+        "id": "65df4SV",
+        "carro" : "universal",
+        "properties" : {
+            "codigo" : "ACCESORIOS",
+            "marca" : "",
+            "largo" : ""
+        }
+    }
+]

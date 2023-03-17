@@ -1,0 +1,35 @@
+@use '../styles/variables' as *;
+@use '../styles/typography' as *;
+@use '../styles/mixins' as *;
+@use '../styles/breakpoints' as *;
+
+.container{
+    @include container;
+    padding-top: $pd-l;
+    
+    .content{
+        width: 100%;
+        max-width: 1300px;
+        margin-inline: auto;
+        min-height: 500px;
+    }
+}
+
+.row{
+    padding-inline: $pd-s;
+
+    @include desktop-sm{
+        display: flex;
+        gap: 1rem;
+    }
+
+    .left{
+        flex: 1;
+    }
+
+    .right{
+        width: 300px;
+    }
+}
+
+

@@ -1,0 +1,30 @@
+@use '../styles/variables' as *;
+@use '../styles/typography' as *;
+@use '../styles/mixins' as *;
+@use '../styles/breakpoints' as *;
+
+.container{
+    @include container(3rem);
+
+    .content{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-top: $mg-xl;
+}
+
+.extraText{
+    font-size: 1.1rem;
+    width: 90%;
+    margin-inline: auto;
+    max-width: 1300px;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+}

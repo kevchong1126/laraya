@@ -1,0 +1,148 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.modalOverlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba($color: $black, $alpha: 0.8);
+    z-index: 999;
+    animation: opacity 0.3s ease-in-out;
+}
+
+.card{
+    position: fixed;
+    top: 5.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80vw;
+    max-width: 500px;
+    height: 80vh;
+    background-color: $white;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 999;
+    animation: opacity 0.2s linear;
+}
+
+.header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: $blue-dark-1;
+    padding-block: $pd-s;
+    padding-inline: $pd-nm;
+
+    .text{
+        flex: 1;
+        font-size: $txt-l;
+        font-weight: 900;
+        color: $white;
+        text-align: center;
+    }
+
+    .close{
+        cursor: pointer;
+        font-size: $txt-l;
+        font-weight: 900;
+        color: $white;
+        padding: $pd-xs;
+        @include transition;
+
+        &:hover{
+            opacity: 0.6;
+        }
+    }
+}
+
+.body{
+    width: 80%;
+    margin-inline: auto;
+}
+
+.save{
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: $mg-xl;
+
+    .saveBtn{
+        cursor: pointer;
+        display: block;
+        width: 100%;
+        color: $white;
+        font-weight: 700;
+        font-size: $txt-l;
+        padding-block: $pd-s;
+        background-color: $blue-dark-1;
+        border-radius: 0.4rem;
+        @include transition;
+
+        &:hover{
+            opacity: 0.9;
+        }
+    }
+
+    .disabledBtn{
+        pointer-events: none;
+        display: block;
+        width: 100%;
+        font-weight: 700;
+        font-size: $txt-l;
+        padding-block: $pd-s;
+        background-color: rgba($color: $black, $alpha: 0.1);
+        color: rgba($color: $black, $alpha: 0.3);
+        border: 2px solid rgba($color: $black, $alpha: 0.3);
+        border-radius: 0.4rem;
+    }
+
+}
+
+.deleteCar{
+    width: 80%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding-bottom: $pd-nm;
+
+    .or{
+        font-size: $txt-nm;
+        font-weight: 700;
+        color: $black;
+        text-align: center;
+    }
+
+    .delete{
+        display: block;
+        background-color: transparent;
+        font-size: $txt-nm;
+        border: none;
+        font-weight: 700;
+        color: $gray-dark-1;
+        text-decoration: underline;
+        cursor: pointer;
+        text-align: center;
+        @include transition;
+
+        &:hover{
+            color: $black;
+        }
+    }
+}
+
+@keyframes opacity{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

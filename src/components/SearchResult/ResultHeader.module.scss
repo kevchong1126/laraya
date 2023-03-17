@@ -1,0 +1,41 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container;
+    font-weight: 700;
+
+    .content{
+        width: 95%;
+        margin-inline: auto;
+
+        .title{
+            font-weight: 900;
+            margin-bottom: $mg-s;
+            font-size: $txt-xl;
+
+            .italic{
+                font-style: italic;
+            }
+        }
+
+        .selectedCar{
+            display: flex;
+            align-items: center;
+            gap: $pd-nm;
+            max-width: 20rem;
+            color: $white;
+            background-color: $green-dark-2;
+            padding: $pd-s $pd-s;
+            border-radius: 0.1rem;
+            letter-spacing: 1px;
+
+            .selectedIcon{
+                font-size: 1.5rem;
+            }
+
+        }
+    }
+}

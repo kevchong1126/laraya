@@ -1,0 +1,47 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container($mg-l);
+
+    .content{
+        width: 90%;
+        margin-inline: auto;
+    }
+}
+
+.titleContainer{
+    margin-top: $mg-s;
+    text-align: center;
+
+    .title{
+        display: inline-block;
+        position: relative;
+        font-size: $txt-xl;
+        font-style: italic;
+        font-weight: 900;
+        padding-bottom: $pd-xs;
+    }
+
+    .title::after{
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0.5rem;
+        width: 5rem;
+        height: 3px;
+        border-radius: 1rem;
+        background-color: $yellow;
+    }
+}
+
+.categoryWrapper{
+    margin-top: $mg-nm;
+    max-width: 750px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}

@@ -1,0 +1,28 @@
+@use '../styles/variables' as *;
+@use '../styles/typography' as *;
+@use '../styles/mixins' as *;
+@use '../styles/breakpoints' as *;
+
+.logoContainer{
+    display: flex;
+    width: max-content;
+    
+
+    .logo{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        
+        .logoImg{
+            width: 5rem;
+            object-fit: contain;
+        }
+
+        .logoText{
+            display: flex;
+            font-size: 1.4rem;
+            color: $black;
+        }
+    }
+}

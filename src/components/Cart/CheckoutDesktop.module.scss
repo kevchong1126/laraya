@@ -1,0 +1,82 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    display: none;
+    width: 100%;
+    height: 500px;
+    position: sticky;
+    top: 0.2rem;
+    background-color: $white;
+    box-shadow: 1px 0px 5px rgba($color: $black, $alpha: 0.3);
+    border-radius: 0.1rem;
+    padding-top: $pd-l;
+
+    @include desktop-sm{
+        display: block;
+    }
+    
+    .content{
+        width: 95%;
+        margin-inline: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.header{
+    font-weight: 900;
+    font-size: $txt-l;
+    color: $gray-dark-3;
+    text-align: center;
+
+    .summary{
+        position: relative;
+        display: inline-block;
+        padding-bottom: $pd-s;
+        
+    }
+
+    .summary::after{
+        content: '';
+        position: absolute;
+        width: 50%;
+        height: 2px;
+        left: 22%;
+        bottom: 0;
+        border-radius: 2rem;
+        background-color: $black;
+    }
+}
+
+.center{
+    font-weight: 700;
+
+    .totalProductsContainer{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: $pd-xs;
+        border-bottom: 1px solid $white;
+    }
+}
+
+.btnContainer{
+    width: 80%;
+    margin-inline: auto;
+    margin-bottom: $mg-l;
+    
+    .checkoutBtn{
+        cursor: pointer;
+        @include resetBtn;
+        @include btn;
+        width: 100%;
+        background-color: $green-dark-2;
+        color: $white;
+        font-weight: 700;
+        font-size: $txt-l;
+    }
+}

@@ -1,0 +1,50 @@
+@use '../../styles/variables' as *;
+@use '../../styles/typography' as *;
+@use '../../styles/mixins' as *;
+@use '../../styles/breakpoints' as *;
+
+.container{
+    @include container;
+    color: $gray-dark-3;
+    
+    .cards{ 
+        display: flex;
+        flex-direction: column;
+        gap: 0.3rem;
+    }
+
+    .empyCart{
+        min-height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+
+        @include desktop-sm{
+            min-height: 500px;
+        }
+        
+        .icon{
+            font-size: 5rem;
+        }
+
+        .emptyHeader{
+            font-weight: 900;
+        }
+
+        .btn{
+            display: inline-block;
+            padding: $pd-s $pd-l;
+            background-color: $gray-dark-3;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 700;
+            @include transition($duration: 0.2s);
+
+            &:hover{
+                background-color: rgba($color: $gray-dark-3, $alpha: 0.8);
+            }
+        }
+    }
+}
