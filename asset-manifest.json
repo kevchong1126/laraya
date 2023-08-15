@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/laraya/static/css/main.4f6e618d.css",
-    "main.js": "/laraya/static/js/main.bd06a3ee.js",
+    "main.css": "/laraya/static/css/main.ba46fecd.css",
+    "main.js": "/laraya/static/js/main.c4014a5b.js",
     "static/media/rims.png": "/laraya/static/media/rims.5b24be27e29dd3806064.png",
     "static/media/wipers.png": "/laraya/static/media/wipers.0aa558c794d698db8565.png",
     "static/media/oil.png": "/laraya/static/media/oil.dc1edf48aa86cd857578.png",
@@ -44,11 +44,11 @@
     "static/media/addVehicle.svg": "/laraya/static/media/addVehicle.7c3da99267f0c579b1bedffd308724cc.svg",
     "static/media/slick.woff": "/laraya/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/laraya/index.html",
-    "main.4f6e618d.css.map": "/laraya/static/css/main.4f6e618d.css.map",
-    "main.bd06a3ee.js.map": "/laraya/static/js/main.bd06a3ee.js.map"
+    "main.ba46fecd.css.map": "/laraya/static/css/main.ba46fecd.css.map",
+    "main.c4014a5b.js.map": "/laraya/static/js/main.c4014a5b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f6e618d.css",
-    "static/js/main.bd06a3ee.js"
+    "static/css/main.ba46fecd.css",
+    "static/js/main.c4014a5b.js"
   ]
 }
