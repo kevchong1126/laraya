@@ -11,7 +11,7 @@ const CheckoutMobile = () => {
         <div className={style.content}>
             <div className={style.btnContainer}>
                 <a className={style.checkoutBtn}  href="https://api.whatsapp.com/send?phone=61420781" target='_blank' rel="noreferrer">
-                    Cotizar en Whatsapp
+                    Send message
                 </a>
             </div>
 

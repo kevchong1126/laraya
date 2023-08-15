@@ -11,8 +11,8 @@ import { setCar, deleteCar } from '../../store/actionCreators/selectedCarCreator
 const Modal = ({ isClicked, clickHandler }) => {
     const dispatch = useDispatch();
     const car = JSON.parse(localStorage.getItem('selectedCar'))
-    const [selectedMake, setSelectedMake] = useState('Marca');
-    const [selectedModel, setSelectedModel] = useState('Modelo');
+    const [selectedMake, setSelectedMake] = useState('Make');
+    const [selectedModel, setSelectedModel] = useState('Model');
     
    
     const addHandler = () => {
@@ -46,7 +46,7 @@ const Modal = ({ isClicked, clickHandler }) => {
         <div className={style.card}>
             <div className={style.header}>
                 <p className={style.text}>
-                    Seleccione un carro
+                    SELECT A CAR
                 </p>
                 <p className={style.close} onClick={ () => clickHandler(false)}>X</p>
             </div>
@@ -58,15 +58,15 @@ const Modal = ({ isClicked, clickHandler }) => {
 
             <div className={style.save}>
                 <button className={` ${selectedMake !== 'Marca' && selectedModel !== 'Modelo' ? style.saveBtn : style.disabledBtn}`} onClick={addHandler}>
-                    Agregar Carro
+                    ADD CAR
                 </button>
             </div>
 
             {
                 car && 
                 <div className={style.deleteCar}>
-                    <p className={style.or}> O </p>
-                    <button className={style.delete} onClick={deleteJSONHandler}> Eliminar {car} </button>
+                    <p className={style.or}> OR </p>
+                    <button className={style.delete} onClick={deleteJSONHandler}> DELETE {car} </button>
                 </div>
             }
         </div>

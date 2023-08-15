@@ -21,9 +21,9 @@ const ResultHeader = () => {
   return (
     <div className={style.container}>
         <div className={style.content} onClick={ () => console.log(car, selectedCar)}>
-            <h2 className={style.title}> Buscando ''<span className={style.italic}>{newQuery}</span>  ''</h2>
+            <h2 className={style.title}> Searching for ''<span className={style.italic}>{newQuery}</span>  ''</h2>
             {
-              selectedCar && <p className={style.selectedCar}> <AiOutlineCheckCircle className={style.selectedIcon} /> PARA {selectedCar} </p>
+              selectedCar && <p className={style.selectedCar}> <AiOutlineCheckCircle className={style.selectedIcon} /> SELECTED CAR: {selectedCar} </p>
             }
         </div>
     </div>

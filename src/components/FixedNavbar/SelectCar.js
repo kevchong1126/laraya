@@ -16,7 +16,7 @@ export const SelectCar = () => {
               {
                 car ? 
                 <p className={style.selectedCar}> {car} </p> :
-                <p className={style.text}> Agregar vehiculo </p>
+                <p className={style.text}> Select Car </p>
               }
         </div>
         {

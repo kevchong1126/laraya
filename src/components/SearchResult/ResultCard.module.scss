@@ -65,6 +65,15 @@
             }
         }
         
+        .fits{
+            display: inline-block;
+            margin-top: $mg-s;
+            padding: $pd-xs;
+            color: white;
+            font-weight: 500;
+            background-color: $green-dark-2;
+            border-radius: 0.1rem;
+        }
     }
 
     .bottom{

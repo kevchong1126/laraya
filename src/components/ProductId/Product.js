@@ -52,8 +52,8 @@ const Product = () => {
                         <div className={style.btnContainer}>
                             {
                                 cartProd ? 
-                                <Link className={style.updateCart} to='/cart'>Ir a carrito </Link> :
-                                <button className={style.addToCart} onClick={addToCart}>Agregar a Carrito</button>
+                                <Link className={style.updateCart} to='/cart'>Go to Cart</Link> :
+                                <button className={style.addToCart} onClick={addToCart}>Add to Cart</button>
                             }
                         </div>
                     </div>

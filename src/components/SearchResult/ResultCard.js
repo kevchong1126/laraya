@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux';
 import { ADD } from '../../store/actionCreators/cartItemsCreator';
 
-const ResultCard = ({product}) => {
+const ResultCard = ({product, fits}) => {
     const dispatch = useDispatch();
     const { products } = useSelector( el => el.cartItems);
     const {img, descripcion, properties, id} = product;
@@ -33,6 +33,14 @@ const ResultCard = ({product}) => {
                     <Link className={style.titleLink} to={`/prod/${id}`}>
                         <h3 className={style.title}>{descripcion}</h3>
                     </Link>
+
+                    {
+                        fits && <div className={style.fits}>Fits Your Car</div>
+                        
+                    }
+                    {
+                        console.log(fits)
+                    }
                 </div>
 
                 <div className={style.bottom}>
@@ -48,9 +56,9 @@ const ResultCard = ({product}) => {
                     {
                         !products.find( el => el.id === id) ?
 
-                        <button className={style.addBtn} onClick={AddItemHandler}> <BsCartPlus className={style.addIcon} />Añadir</button>
+                        <button className={style.addBtn} onClick={AddItemHandler}> <BsCartPlus className={style.addIcon} />Add to Cart</button>
                         :
-                        <Link className={style.goToCart} to='/cart' >Ir Al Carrito</Link>
+                        <Link className={style.goToCart} to='/cart' >Go to Cart</Link>
                     }
                 </div>
             </div>

@@ -32,7 +32,7 @@ const CartCard = ({product}) => {
 
             <Link className={style.top} to={`/prod/${product.id}`}>
                 <h3 className={style.title}>{descripcion}</h3>
-
+                
                 <div className={style.imgContainer}>
                     <img className={style.img} src={process.env.PUBLIC_URL + img} alt={descripcion} />
                 </div>

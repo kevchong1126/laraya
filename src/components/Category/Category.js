@@ -10,7 +10,7 @@ const Category = () => {
         <div className={style.content}>
 
             <div className={style.titleContainer}>
-                <h2 className={style.title}>Categorias Populares</h2>
+                <h2 className={style.title}>Categories</h2>
             </div>
 
             <div className={style.categoryWrapper}>

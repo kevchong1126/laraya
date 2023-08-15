@@ -24,9 +24,9 @@ const CartCards = () => {
                 <div className={style.empyCart}>
                     <BsCartFill className={style.icon} />
                     <h1 className={style.emptyHeader}>
-                        Ups! Tu carrito esta vacio
+                        Oops! Seems like your cart is empty
                     </h1>
-                    <Link to='/' className={style.btn}>Regresar a Inicio</Link>
+                    <Link to='/laraya' className={style.btn}>Go back to home</Link>
                 </div>
                 }
             </div>

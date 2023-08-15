@@ -38,17 +38,17 @@ const Navbar = () => {
           <div className={style.btns}>
               <Link className={style.btnLink} to='/laraya'>
                 <AiFillHome className={style.icon}/>
-                <p>Inicio</p>
+                <p>Home</p>
               </Link>
 
               <Link className={style.btnLink} to='/login'>
                 <FaUserAlt className={style.icon}/>
-                <p>Iniciar Sesion</p>
+                <p>Login</p>
               </Link>
 
               <Link className={style.btnLink} to='/cart'>
                 <BsFillCartFill className={style.icon}/>
-                <p>Carrito</p>
+                <p>Cart</p>
               </Link>
           </div>
         </div>
