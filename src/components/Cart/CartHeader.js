@@ -8,7 +8,7 @@ const CartHeader = () => {
     <div className={style.container}>
         <div className={style.header}>
             <h1 className={style.title}>
-                Mi <span className={style.highlight}>Carrito</span>
+                My <span className={style.highlight}>Cart</span>
             </h1>
             <BsFillCartFill className={style.icon}/>
         </div>
