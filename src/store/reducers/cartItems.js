@@ -13,7 +13,7 @@ const cartItemsReducer = (state = initialState, action) => {
         case ADD_ITEM: {
             
             const { product, amount } = action.payload;
-            let { id } = product;
+            let id = product.id;
 
             if (state.products.find(el => el.id === id)) return
             

@@ -1,90 +1,13 @@
-[
-    {
-        "img": "/productImg/brakefluid.png",
-        "descripcion": "LIQUIDO FRENO",
-        "carro" : "universal",
-        "id": "bfbvcs",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "WAGNER",
-            "largo" : "8 ON"
-        }
-    },
-    {
-        "img": "/productImg/brakefluid.png",
-        "descripcion": "LIQUIDO FRENO",
-        "id": "GDc46",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "WAGNER",
-            "largo" : "16 ON"
-        }
-    },
-    {
-        "img": "/productImg/coolant.png",
-        "descripcion": "COOLANT",
-        "id": "V9dktu8SD",
-        "carro" : "universal",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "PEAK",
-            "largo" : "1 GAL"
-        }
-    },
-    {
-        "img": "/productImg/silicone.png",
-        "descripcion": "SILICON GRIS",
-        "id": "V3asx1RS",
-        "carro" : "universal",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "PERMATEX",
-            "largo" : ""
-        }
-    },
-    {
-        "img": "/productImg/jackstand.png",
-        "descripcion": "GATA BOTELLA",
-        "id": "ETiuo2078",
-        "carro" : "universal",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "",
-            "largo" : "2 TON"
-        }
-    },
-    {
-        "img": "/productImg/coolant.png",
-        "descripcion": "COOLANT",
-        "id": "Dcxmn489",
-        "carro" : "universal",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "SHELDRAK",
-            "largo" : ""
-        }
-    },
-    {
-        "img": "/productImg/siliconered.png",
-        "descripcion": "SILCON ROJO",
-        "id": "65z25SV",
-        "carro" : "universal",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "PERMATEX",
-            "largo" : ""
-        }
-    },
-    {
-        "img": "/productImg/wd40.png",
-        "descripcion": "WD40",
-        "id": "6A12SV",
-        "carro" : "universal",
-        "properties" : {
-            "codigo" : "ACCESORIOS",
-            "marca" : "WD40",
-            "largo" : ""
-        }
-    }
-]
+
+    [
+    {"img":"/productImg/brakefluid.png","descripcion":"BRAKE FLUID TOOL","carro":"universal","properties":{"PART#":"bfbvcs78","BRAND":"WAGNER","DIMENSIONS":"8 ON"}},
+    {"img":"/productImg/brakefluid.png","descripcion":"BRAKE FLUID TOOL","properties":{"PART#":"GDc46VT","BRAND":"WAGNER","DIMENSIONS":"16 ON"}},
+    {"img":"/productImg/coolant.png","descripcion":"COOLANT TOOL","carro":"universal","properties":{"PART#":"V9dktu8SD","BRAND":"PEAK","DIMENSIONS":"1 GAL"}},
+    {"img":"/productImg/silicone.png","descripcion":"GRAY SILICONE TOOL","carro":"universal","properties":{"PART#":"V3asx1RS","BRAND":"PERMATEX","DIMENSIONS":""}},
+    {"img":"/productImg/jackstand.png","descripcion":"JACK STAND TOOL","carro":"universal","properties":{"PART#":"ETiuo2078","BRAND":"","DIMENSIONS":"2 TON"}},
+    {"img":"/productImg/coolant.png","descripcion":"COOLANT TOOL","carro":"universal","properties":{"PART#":"Dcxmn489","BRAND":"SHELDRAK","DIMENSIONS":""}},
+    {"img":"/productImg/siliconered.png","descripcion":"RED SILICONE TOOL","carro":"universal","properties":{"PART#":"65z25SV","BRAND":"PERMATEX","DIMENSIONS":""}},
+    {"img":"/productImg/wd40.png","descripcion":"WD40 TOOL","carro":"universal","properties":{"PART#":"6A12SVa","BRAND":"WD40","DIMENSIONS":""}},
+    {"img":"/productImg/pennzoil.png","descripcion":"PENNZOIL 20W50","carro":"universal","properties":{"PART#":"ovSjif","BRAND":"PENNZOIL","DIMENSIONS":""}}
+    ]
 
