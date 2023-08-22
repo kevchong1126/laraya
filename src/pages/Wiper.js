@@ -16,20 +16,20 @@ import img5 from '../img/brandPromo/bosch5.jpg'
 import img6 from '../img/brandPromo/bosch6.jpg'
 import img7 from '../img/brandPromo/bosch7.jpg'
 
-const title1 = 'Mejor Claridad';
-const text1 = 'Sabemos que manejar en la lluvia es dificil, especialmente en las noches. Bosch FOCUS™ ofrece optima claridad en la noche e incrementa la seguridad al manejar';
-const title2 = 'Multiproposito';
-const text2 = 'Curva patentada de Bosch CLEAR™ que permite una buena limpiza en las mayorias de los climas';
-const title3 = 'Nuevo Diseño';
-const text3 = 'El diseño patentado de Bosch EVOLUTION™ ofrece una limpieza que distribuye uniformemente la presion sobre toda la escobilla';
-const title4 = 'Historia de Bosch';
-const text4 = 'En 1886, Robert Bosch fundó el "Taller de mecánica de precisión e ingeniería eléctrica ​​en Stuttgart. Este fue el nacimiento de la compañía que opera globalmente en la actualidad. Desde sus inicios se caracterizó por la fuerza innovadora y el compromiso social.';
+const title1 = 'Better visibility';
+const text1 = 'We know that driving in the rain is difficult, especially at night. Bosch FOCUS™ offers optimum clarity at night and increases driving safety';
+const title2 = 'Multipurpose';
+const text2 = 'Bosch CLEAR™ patented curve for good cleaning in most climates';
+const title3 = 'New Design';
+const text3 = 'Boschs patented EVOLUTION™ design provides cleaning that evenly distributes pressure over the entire blade';
+const title4 = 'Bosch History';
+const text4 = 'In 1886, Robert Bosch founded the "Workshop for Precision Mechanics and Electrical Engineering in Stuttgart. This was the birth of the company that operates globally today. From its inception it was characterized by innovative strength and social commitment.';
 const title5 = 'Estandar de Alta Calidad';
-const text5 = 'Precio competitivo con una eficiencia y seguridad maxima para el conductor';
-const title6 = 'Instalacion Facil';
-const text6 = 'Las escobillas Bosch vienen con adaptadores pre-ensamblados que permiten una instalacion eficaz y rapida';
-const title7 = 'Estructura Robusta para Mejor Estabilidad';
-const text7 = 'Las escobillas de estructura metalica vienen incluidos con doble proteccion ante la corrosion';
+const text5 = 'Competitive price with maximum efficiency and safety for the driver';
+const title6 = 'Easy Installation';
+const text6 = 'Bosch wiper blades come with pre-assembled adapters that allow for quick and efficient installation.';
+const title7 = 'Robust Structure for Better Stability';
+const text7 = 'The metallic structure brushes are included with double protection against corrosion';
 
 const Wiper = () => {
   return (
@@ -46,7 +46,7 @@ const Wiper = () => {
             <TextLeft img={img4} text={text4} title={title4} />
 
             <div className={style.perksContainer}>
-              <h3 className={style.perksTitle}>Beneficios de Usar Bosch</h3>
+              <h3 className={style.perksTitle}>Benefits of Using Bosch</h3>
 
                <div className={style.flex}>
                 <CardUp img={img5} text={text5} title={title5}/>

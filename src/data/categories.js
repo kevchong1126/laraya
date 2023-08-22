@@ -12,54 +12,54 @@ import img14 from '../img/category/bushing.png'
 
 export const categories = [
     {
-        title: 'ACEITES',
+        title: 'OIL',
         img: img2,
-        url: 'ACEITE'
+        url: 'OIL'
     },
     {
-        title: 'AMORTIGUADOR',
+        title: 'SHOCK ABSORBER',
         img: img3,
-        url: 'AMORTIGUADOR'
+        url: 'SHOCK ABSORBER'
     },
     {
-        title: 'DISCO DE FRENO',
+        title: 'BRAKE ROTOR',
         img: img4,
-        url: 'DISCO-FRENO'
+        url: 'BRAKE-ROTOR'
     },
     {
-        title: 'EMPAQUE DE CABEZOTE',
+        title: 'HEAD GASKET',
         img: img5,
-        url: 'EMPAQUE-CABEZOTE'
+        url: 'HEAD-GASKET'
     },
     {
-        title: 'FILTRO DE ACEITE',
+        title: 'OIL FILTER',
         img: img7,
-        url: 'FILTRO-ACEITE'
+        url: 'OIL-FILTER'
     },
     {
-        title: 'FILTRO DE AIRE',
+        title: 'AIR FILTER',
         img: img8,
-        url: 'FILTRO-AIRE'
+        url: 'AIR-FILTER'
     },
     {
-        title: 'BUJIA',
+        title: 'SPARK PLUG',
         img: img9,
-        url: 'BUJIA'
+        url: 'SPARK PLUG'
     },
     {
-        title: 'FAJA',
+        title: 'BELT',
         img: img10,
-        url: 'FAJA'
+        url: 'BELT'
     },
     {
-        title: 'BOMBA DE AGUA',
+        title: 'WATER PUMP',
         img: img11,
-        url: 'BOMBA-AGUA'
+        url: 'WATER-PUMP'
     },
     {
-        title: 'RETENEDOR',
+        title: 'OIL SEAL',
         img: img12,
-        url: 'RETENEDOR'
+        url: 'OIL-SEAL'
     },
     {
         title:'BUSHING',

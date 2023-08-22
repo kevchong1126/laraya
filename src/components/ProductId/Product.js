@@ -16,7 +16,7 @@ const Product = () => {
     const currProd = db.find(el => el.id === pathID) || '';
     const { descripcion, img, properties, id} = currProd || ''; 
     const cartProd = products.find( el => el.id === id);
-    const [qty, setQty] = useState(cartProd ? cartProd.qty : 1);
+    const [qty] = useState(cartProd ? cartProd.qty : 1);
 
     const addToCart = () => {
         dispatch(ADD(currProd, 1))

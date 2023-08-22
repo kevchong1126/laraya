@@ -51,7 +51,7 @@ const TrustedBrands = () => {
     <div className={style.container}>   
         <div className={style.content}>
             <div className={style.header}>
-                <h2 className={style.title}>Marcas de confianza</h2>
+                <h2 className={style.title}>Trusted Brands</h2>
             </div>
 
             <div className={style.row}>

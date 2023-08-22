@@ -12,22 +12,22 @@ const Login = () => {
             </div>
             
             <div className={style.submitForm}>
-                <input type='text' placeholder='Usario o E-mail' className={style.inputForm} />
+                <input type='text' placeholder='Username or Email' className={style.inputForm} />
 
-                <input type='password' placeholder='Contraseña' className={style.inputForm} />
+                <input type='password' placeholder='Password' className={style.inputForm} />
 
                 <button className={style.loginBtn}>
-                    Temporalmente Fuera de Servicio
+                    Temporarily Unavailable
                 </button>
 
                 <div className={style.methods}>
-                    <button className={style.method}>Olvido La Contraseña?</button>
-                    <button className={style.method}>Registrarse</button>
+                    <button className={style.method}>Forgot your password?</button>
+                    <button className={style.method}>Register</button>
                 </div>
             </div>
 
             <div className={style.footer}>
-                Este sitio está protegido por reCAPTCHA y se aplican la Política de privacidad y los Términos de servicio de Google.
+                This site is protected by reCAPTCHA and the Google Privacy Policy and Terms of Service apply.
             </div>
         </div>
     </div>

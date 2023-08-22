@@ -24,26 +24,26 @@ const ResultCards = () => {
   useEffect(() => {
     const splitQuery = searchquery.split('-');
     const ht = {};
-    console.log(car, selectedCar)
+
     const newProducts = db.filter( product => {
         if (selectedCar){
           setFitsCar(true);
 
-          return splitQuery.every( word => product.descripcion.includes(word) || product.properties.codigo === word ) && (selectedCar === product.carro || product.carro === 'universal') 
+          return splitQuery.every( word => product.descripcion.includes(word) || product.properties['PART#'] === word ) && (selectedCar === product.carro || product.carro === 'universal') 
         }
 
         else if (!selectedCar){
           setFitsCar(false);
 
-          if (splitQuery.every( word => product.descripcion.includes(word) || product.properties.codigo === word ) && !ht[product.properties.codigo]){
-            ht[product.properties.codigo] = true;
+          if (splitQuery.every( word => product.descripcion.includes(word) || product.properties['PART#'] === word ) && !ht[product.properties['PART#']]){
+            ht[product.properties['PART#']] = true;
             return true
           }
         } 
         
         return false
     })
-    
+    console.log(newProducts)
     setPageNumber(0)
     setProducts(newProducts);
     
@@ -66,13 +66,13 @@ const ResultCards = () => {
     }
 
     return (<>
-              <h3 className={style.productLength}> Mostrando "{products.length}" producto(s)</h3>
+              <h3 className={style.productLength}> Showing "{products.length}" product(s)</h3>
               {
               products.slice(pagesVisited, pagesVisited+qtyPerPage).map(el => <ResultCard key={el.id} product={el} fits={fitsCar}/>)
               }
               <ReactPaginate 
-                previousLabel='Anterior'
-                nextLabel='Siguiente'
+                previousLabel='Previous'
+                nextLabel='Next'
                 pageCount={pageCount}
                 onPageChange={changePage}
                 containerClassName={style.paginate}

@@ -1,5 +1,5 @@
 export const dummy  = ['CHEVROLET',  'DAIHATSU',
-    , 'HONDA', 'HYUNDAI',    'ISUZU',      'MAZDA',
+    'HONDA', 'HYUNDAI',    'ISUZU',      'MAZDA',
     'MITSUBISHI', 'NISSAN', 'SUBARU', 'SUZUKI',
     'TOYOTA',  'VOLKSWAGEN'
   ];

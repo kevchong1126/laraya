@@ -14,11 +14,11 @@ const Home = () => {
   return (
     <>
       <Banners />
-      <ProductSlider title={'Lo Mas '} highlight={'Popular'} products={products}/>
+      <ProductSlider title={'Most '} highlight={'Searched'} products={products}/>
       <Category />
       <ContactBanner />
-      <ProductSlider title={'Los '} highlight={'Esenciales'} products={essentials}/>
-      <ProductSlider title={'Proteccion '} highlight={'Para Usted'} products={safety} />
+      <ProductSlider title={'The '} highlight={'Essential'} products={essentials}/>
+      <ProductSlider title={'Protection '} highlight={'For You'} products={safety} />
       <TrustedBrands />
     </>
   )

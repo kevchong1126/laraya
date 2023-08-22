@@ -7,7 +7,7 @@ const ContactBanner = () => {
     <div className={style.container}>
         <div className={style.content}>
             <div className={style.text}>
-                <h3 className={style.header}>Mas informacion en:</h3>
+                <h3 className={style.header}>Contact Us:</h3>
             </div>
 
             <div className={style.contactContainer}>

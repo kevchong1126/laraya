@@ -1,37 +1,37 @@
-import React, { useState, useEffect} from 'react'
+import React from 'react'
 import style from './ResultInfo.module.scss'
-
+import { Link } from 'react-router-dom'
 const ResultInfo = () => {
 
   return (
     <div className={style.container}>
 
-        <h4 className={style.categoryTitle}>Categorias Frecuentes</h4>
+        <h4 className={style.categoryTitle}>Frequent Categories</h4>
         
         <ul className={style.similarCategories}>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/PASTILLAS-DELANTERAS'>Pastillas Delanteras</a>
+                <Link className={style.categoryLink} to='/searchresult/BRAKE-PAD'>Brake Pads</Link>
             </li>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/DISCO-FRENO'>Discos de Frenos</a>
+                <Link className={style.categoryLink} to='/searchresult/BRAKE-ROTOR'>Brake Rotors</Link>
             </li>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/ACEITE'>Aceites</a>
+                <Link className={style.categoryLink} to='/searchresult/OIL'>Oil</Link>
             </li>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/ROTULA'>Rotulas</a>
+                <Link className={style.categoryLink} to='/searchresult/BUSHING'>Bushings</Link>
             </li>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/ESCOBILLA'>Escobillas</a>
+                <Link className={style.categoryLink} to='/searchresult/WIPER'>Windshield Wiper</Link>
             </li>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/ROL'>Rol</a>
+                <Link className={style.categoryLink} to='/searchresult/BEARING'>Bearing</Link>
             </li>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/RETENEDOR'>Retenedor</a>
+                <Link className={style.categoryLink} to='/searchresult/OIL SEAL'>Oil Seal</Link>
             </li>
             <li className={style.category}>
-                <a className={style.categoryLink} href='/searchresult/FILTRO'>Filtros</a>
+                <Link className={style.categoryLink} to='/searchresult/FILTER'>Filters</Link>
             </li>
         </ul>
 

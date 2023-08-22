@@ -12,10 +12,10 @@ const Banners = () => {
   return (
     <div className={style.container}>
         <div className={style.content}>
-            <Banner className={'a'} source={wipers} link={'/bosch'} text={'ESCOBILLAS DE'} highlight={'ALTA CALIDAD'}/>
-            <Banner className={'b'} source={rims} link={'/searchresult/ACCESORIOS'} text={'LOS MEJORES'} highlight={'ACCESORIOS'} />
-            <Banner className={'c'} source={oil} link={'/pennzoil'} text={'MEJOR'} highlight={'LUBRICACIÓN'} />
-            <Banner className={'d'} source={coolant} link={'/coolant'} text={'ENFRÍA'} highlight={'TU MOTOR'} />
+            <Banner className={'a'} source={wipers} link={'/bosch'} text={'QUALITY'} highlight={'WINDSHIELD WIPERS'}/>
+            <Banner className={'b'} source={rims} link={'/searchresult/TOOL'} text={'BEST'} highlight={'ACCESORIES'} />
+            <Banner className={'c'} source={oil} link={'/pennzoil'} text={'BEST'} highlight={'LUBRICATION'} />
+            <Banner className={'d'} source={coolant} link={'/coolant'} text={'COOL'} highlight={'YOUR ENGINE'} />
         </div>
     </div>
   )

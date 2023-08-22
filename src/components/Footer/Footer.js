@@ -14,38 +14,38 @@ const Footer = () => {
         <div className={style.col}>
           <div className={style.header}><Logo /></div>
           <div className={style.about}>
-            En Repuestos Gigante, encontrará la mayor variedad de Repuestos. Nuestro objetivo es de brindarle a nuestros clientes el mejor respaldo y la mejor calidad, siempre al mejor precio.
+            In La Raya Auto Parts, you will find the largest variety of Spare Parts. Our goal is to provide our customers with the best support and the best quality, always at the best price.
           </div>
         </div>
         
         <div className={style.col}>
-          <div className={style.header}> Links Frecuentes</div>
+          <div className={style.header}>Frequent Links</div>
           
           <ul className={style.list}>
             <li className={style.listItem}>
-              <Link className={style.link} to='/laraya'>Inicio</Link>
+              <Link className={style.link} to='/laraya'>Home</Link>
             </li>
             <li className={style.listItem}>
-              <Link className={style.link} to='/bosch'>Escobillas</Link>
+              <Link className={style.link} to='/bosch'>Windshield Wipers</Link>
             </li>
             <li className={style.listItem}>
-              <Link className={style.link} to='/pennzoil'>Aceites</Link>
+              <Link className={style.link} to='/pennzoil'>Oil</Link>
             </li>
           </ul>
         </div>
 
         <div className={style.col}>
-          <div className={style.header}>Informacion de Contacto</div>
+          <div className={style.header}>Contact Information</div>
 
           <ul className={style.list}>
             <li className={style.listItem}>
-              100m Sur de la Clinica Marcial Fallas, Frente a Ekono
+            2219 10th St
             </li>
             <li className={style.listItem}>
-              Desamparados, San Jose
+            Great Bend, KS 67530
             </li>
             <li className={style.listItem}>
-              Tel: 2219 - 9367
+              Phone: 2219 - 9367
             </li>
             <li className={style.listItem}>
               Whatsapp: 6142 - 0781
@@ -56,7 +56,7 @@ const Footer = () => {
       
       <div className={style.copyrightContainer}>
         <div className={style.copyrightContent}>
-          © 2022 Auto Repuestos La Raya S.A ||  Pulperos profesionales
+          © 2022 Auto Parts La Raya LCC || Ecommerce
         </div>
       </div>
       </div>

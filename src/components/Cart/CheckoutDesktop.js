@@ -11,12 +11,12 @@ const CheckoutDesktop = () => {
         <div className={style.content}>
 
             <div className={style.header}>
-                <h3 className={style.summary}>Resumen de Orden</h3>
+                <h3 className={style.summary}>Order Summary</h3>
             </div>
 
             <div className={style.center}>
                 <div className={style.totalProductsContainer}>
-                    <p className={style.info}>PRODUCTOS TOTALES</p>
+                    <p className={style.info}>Total Products</p>
                     <p className={style.products}>{itemsAmount} ITEM(S)</p>
                 </div>
             </div>

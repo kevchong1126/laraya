@@ -9,13 +9,13 @@ import img1 from '../img/brandPromo/coolant1.png'
 import img3 from '../img/brandPromo/coolant3.jpg'
 import img4 from '../img/brandPromo/coolant4.jpg'
 
-const title1 = 'Conocidos por varias decadas';
-const text1 = 'Peak no solo establece el estándar para productos y servicios premium. Lo levantamos. La innovación incesante ha estado en el corazón de nuestra empresa desde 1866.Desde lubricantes de vanguardia hasta el mejor mantenimiento automotriz de su clase, hacemos un esfuerzo adicional para que su automóvil también pueda hacerlo.';
-const text2 = 'Desde su fundación, PEAK™ y sus científicos han estado innovando, creando y reinventando fórmulas para aceites de motor de carreras, de alto kilometraje, sintéticos y reciclados. Es este compromiso con la innovación lo que se muestra en nuestros productos que ayudan a que los vehículos circulen con seguridad por las carreteras de todo el mundo.';
-const title3 = 'Temperaturas Extremas';
-const text3 = 'El anticongelante, o refrigerante del motor, es un líquido coloreado que se mezcla con agua para ayudar a regular el motor durante temperaturas extremas.';
-const title4 = 'Mayor Uso';
-const text4 = 'Protección anticorrosión para todos los metales y aleaciones utilizadas en el sistema de refrigeración de los vehículos modernos.';
+const title1 = 'Known for several decades';
+const text1 = 'Peak does not just set the standard for premium products and services. We lift it up. Relentless innovation has been at the heart of our company since 1866. From cutting-edge lubricants to best-in-class auto maintenance, we go the extra mile so your car can too.';
+//const text2 = 'Since its founding, PEAK™ and its scientists have been innovating, creating and reinventing formulas for racing, high mileage, synthetic and recycled motor oils. It's this commitment to innovation that shows in our products that help keep vehicles moving safely on roads around the world.';
+const title3 = 'Extreme temperatures';
+const text3 = 'Antifreeze, or engine coolant, is a colored liquid that mixes with water to help regulate the engine during extreme temperatures.';
+const title4 = 'Increased Use';
+const text4 = 'Corrosion protection for all metals and alloys used in the cooling system of modern vehicles.';
 
 const Coolant = () => {
   return (
@@ -25,7 +25,7 @@ const Coolant = () => {
 
             <TextLeft img={img1} title={title1} text={text1} />
             <p className={style.extraText}>
-            Desde su fundación, PEAK™ y sus científicos han estado innovando, creando y reinventando fórmulas para aceites de motor de carreras, de alto kilometraje, sintéticos y reciclados. Es este compromiso con la innovación lo que se muestra en nuestros productos que ayudan a que los vehículos circulen con seguridad por las carreteras de todo el mundo.
+              Since its founding, PEAK™ and its scientists have been innovating, creating and reinventing formulas for racing, high mileage, synthetic and recycled motor oils. It's this commitment to innovation that shows in our products that help keep vehicles moving safely on roads around the world.
             </p>
             
             <div className={style.flex}>

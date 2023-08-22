@@ -28,7 +28,7 @@ const Search = () => {
   return (
     <div className={style.formContainer} >
         <form className={style.form} onSubmit={handleSearch}>
-            <input className={style.input} type='text' value={query} onChange={queryHandler} placeholder='Search for part by name or code, i.e: "PASTILLAS DELANTERA" "PH28"'></input>
+            <input className={style.input} type='text' value={query} onChange={queryHandler} placeholder='Search for part by name or code, i.e: "BRAKE PAD", "OIL FILTER", "BKR5E"'></input>
             <button className={style.btn}><FaSearch className={style.icon} /></button>
         </form>
     </div>
